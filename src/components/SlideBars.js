@@ -14,8 +14,8 @@ export default class SlideBars extends Component {
         return (
             <div className="container-fluid">
                 <div className="row vh-100">
-                    <SlideBar w="3" d={true}>
-                        <button type="button" onClick={getAlbums} className="btn btn-secondary rounded-pill">Albums</button>
+                    <SlideBar w="2" d={true}>
+                        <button type="button" onClick={getAlbums} className="btn btn-secondary rounded-pill w-75">Albums</button>
                     </SlideBar>
                     <SlideBar w="2">
                         <ImagesContext.Consumer>
@@ -28,7 +28,7 @@ export default class SlideBars extends Component {
                             }
                         </ImagesContext.Consumer>
                     </SlideBar>
-                    <SlideBar w="7">
+                    <SlideBar w="8">
                         <ImagesContext.Consumer>
                             {
                                 context => (
